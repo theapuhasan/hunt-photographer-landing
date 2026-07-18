@@ -1,4 +1,4 @@
-# Hunt Photography — Landing Page
+# Hunt Photographer — Landing Page
 
 Static marketing landing page for [huntphotographer.com](https://huntphotographer.com), the two-sided photography marketplace connecting clients with photographers.
 

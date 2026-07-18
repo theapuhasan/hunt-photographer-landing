@@ -68,11 +68,31 @@ a {
 }
 
 .header-inner {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 14px;
+}
+
+.nav-toggle-checkbox {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.nav-toggle-label span {
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
 }
 
 .brand img {
@@ -100,6 +120,39 @@ a {
 
 .nav a:not(.btn):hover {
   color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .nav-toggle-label {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 24px 20px;
+  }
+
+  .nav a:not(.btn) {
+    padding: 10px 0;
+  }
+
+  .nav .btn {
+    margin-top: 8px;
+    text-align: center;
+  }
+
+  .nav-toggle-checkbox:checked ~ .nav {
+    display: flex;
+  }
 }
 
 /* Buttons */
@@ -256,4 +309,28 @@ a {
 
 .footer-inner a:hover {
   color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    padding: 56px 0 48px;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .section h2 {
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
