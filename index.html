@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hunt Photography — Find a photographer, or find work</title>
+  <meta name="description" content="Hunt Photography connects clients with photographers for weddings, portraits, and events — post a job or book a fixed-price package directly, with payment held safely until you approve delivery." />
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand">
+        <img src="logo.png" alt="Hunt Photography" height="32" />
+      </a>
+      <nav class="nav">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#contact" class="btn btn-primary">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <h1>Find a photographer. Or find work.</h1>
+        <p class="lede">
+          Hunt Photography is a two-sided marketplace for weddings, portraits,
+          and events — post a job and collect proposals, or book a
+          photographer's fixed-price package directly. Payment is held safely
+          until you approve the delivery.
+        </p>
+        <div class="hero-actions">
+          <a href="#for-clients" class="btn btn-primary btn-lg">I need a photographer</a>
+          <a href="#for-photographers" class="btn btn-secondary btn-lg">I'm a photographer</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <div class="grid-2">
+          <div id="for-clients" class="card">
+            <h3>For clients</h3>
+            <ol>
+              <li>Post a job with your budget, city, and date — or browse a photographer's fixed-price packages and book one directly.</li>
+              <li>Compare proposals from interested photographers, or skip straight to booking.</li>
+              <li>Your payment is held in escrow until you approve the finished work.</li>
+              <li>Leave a review once the job is complete.</li>
+            </ol>
+          </div>
+          <div id="for-photographers" class="card">
+            <h3>For photographers</h3>
+            <ol>
+              <li>Build your profile: portfolio, specialties, service area, and starting price.</li>
+              <li>Browse open jobs and submit proposals, or publish fixed-price packages clients can book directly.</li>
+              <li>Get paid once the client approves your delivery — no chasing invoices.</li>
+              <li>Build your reputation with reviews from every completed job.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-alt">
+      <div class="wrap">
+        <h2>Built for how photography work actually happens</h2>
+        <div class="grid-4">
+          <div class="feature">
+            <h3>Direct booking</h3>
+            <p>Skip the back-and-forth — book a photographer's published package at a fixed price, no bidding required.</p>
+          </div>
+          <div class="feature">
+            <h3>Payments held in escrow</h3>
+            <p>Funds are held once a job is awarded and only released after the client approves the delivered work.</p>
+          </div>
+          <div class="feature">
+            <h3>Verified photographers</h3>
+            <p>Photographer profiles can be verified, with a public portfolio, categories, and pricing signal up front.</p>
+          </div>
+          <div class="feature">
+            <h3>Two-way reviews</h3>
+            <p>Clients and photographers each rate the other after a completed job, keeping the marketplace honest both ways.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="wrap contact-inner">
+        <h2>Get in touch</h2>
+        <p>Hunt Photography is in early access. If you'd like to be one of the first clients or photographers on the platform, reach out.</p>
+        <a class="btn btn-primary btn-lg" href="mailto:info@huntphotographer.com">info@huntphotographer.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> Hunt Photography</span>
+      <a href="mailto:info@huntphotographer.com">info@huntphotographer.com</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
